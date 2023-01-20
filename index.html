@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEGUNDA PRE-ENTRDGA</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    <section class="productos">
+      
+      <article class="articulo">
+        <div class="card">
+          <h2 class="nombre">manzana🍎</h2>
+          <p class="precio">$100</p>
+          <button  data-fruta="manzana" data-precio="100" class="btn">agregar</button>
+          <button data-fruta="manzana" class="eliminar">eliminar</button>
+        </div>
+      </article>
+      <article class="articulo">
+        <div class="card">
+          <h2 class="nombre">piña🍍</h2>
+          <p class="precio">$80</p>
+          <button data-fruta="piña" data-precio="80" class="btn">agregar</button>
+          <button class="eliminar" data-fruta="piña">eliminar</button>
+        </div>
+      </article>
+      <article class="articulo">
+        <div class="card">
+          <h2 class="nombre">sandia🍉</h2>
+          <p class="precio">$150</p>
+          <button  data-fruta="sandia" data-precio="150" class="btn">agregar</button>
+          <a class="eliminar" data-fruta="sandia">eliminar</a>
+         
+        </div>
+      </article>
+     
+    </section>
+    <section class="detalles">
+
+      <h2>TOTAL DE PRODUCTOS</h2>
+      <ul id="lista">
+  
+      </ul>
+      <hr>
+      <div class="info">
+
+        <p>COMPRA TOTAL:</p>
+        <p id="total"></p>
+      </div>
+    </section>
+
+
+  </main>
+  <footer></footer>
+
+
+
+
+
+  <script src="./app.js"></script>
+</body>
+</html>
