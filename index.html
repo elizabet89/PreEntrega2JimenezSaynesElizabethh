@@ -1,66 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEGUNDA PRE-ENTRDGA</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="aprendiendo a programar">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header></header>
-  <main>
-    <section class="productos">
-      
-      <article class="articulo">
-        <div class="card">
-          <h2 class="nombre">manzana🍎</h2>
-          <p class="precio">$100</p>
-          <button  data-fruta="manzana" data-precio="100" class="btn">agregar</button>
-          <button data-fruta="manzana" class="eliminar">eliminar</button>
-        </div>
-      </article>
-      <article class="articulo">
-        <div class="card">
-          <h2 class="nombre">piña🍍</h2>
-          <p class="precio">$80</p>
-          <button data-fruta="piña" data-precio="80" class="btn">agregar</button>
-          <button class="eliminar" data-fruta="piña">eliminar</button>
-        </div>
-      </article>
-      <article class="articulo">
-        <div class="card">
-          <h2 class="nombre">sandia🍉</h2>
-          <p class="precio">$150</p>
-          <button  data-fruta="sandia" data-precio="150" class="btn">agregar</button>
-          <a class="eliminar" data-fruta="sandia">eliminar</a>
-         
-        </div>
-      </article>
-     
-    </section>
-    <section class="detalles">
 
-      <h2>TOTAL DE PRODUCTOS</h2>
-      <ul id="lista">
+
+
+<main>
+
+    <div class="container">
+
+        <article class="articulo">
+            <h2>frutilla🍓</h2>
+            <p class="precio">$300</p>
+            <button data-precio="300" data-fruta="frutilla" class="btn">agregar</button>
+        </article>
+
+        <article class="articulo">
+            <h2>manzana🍏</h2>
+            <p class="precio">$500</p>
+            <button data-precio="500" data-fruta="manzana" class="btn">agregar</button>
+        </article>
+
+        <article class="articulo">
+            <h2>piña🍍</h2>
+            <p class="precio">$100</p>
+            <button data-precio="100" data-fruta="piña" class="btn">agregar</button>
+        </article>
+    </div>
+</main>
+   
+<section >
+
+    <ul class="lista" id="carrito">
+       
+    
+    </ul>
+</section>
+
+<footer id="footer">
+    
+</footer>
+
+<template id="templateFooter">
+    <div class="contenedor">
+        <p class="total">total$ <span>1500</span></p>
+       
+    </div>
+</template>
+
+<template id="template">
+    <li class="item">
+        <span class="title">frutill</span>
+        <span class="cant">12</span>
+    </li>
+
+    <li class="item2">
+        <p >TOTAL:$ <span class="tota">300</span></p>
+        <div class="buton">
+            <button class="quitar">quitar</button>
+            <button class="agregar">Agregar</button>
+        </div>
+    </li>
+</template>
+
   
-      </ul>
-      <hr>
-      <div class="info">
-
-        <p>COMPRA TOTAL:</p>
-        <p id="total"></p>
-      </div>
-    </section>
-
-
-  </main>
-  <footer></footer>
-
-
-
-
-
-  <script src="./app.js"></script>
+   <script src="./app.js"></script>
 </body>
 </html>
